@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="Today Spent: $0"
+            android:text="Total Activity: $0"
             android:textColor="#000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -37,19 +37,19 @@
             >
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="16dp"
                 android:id="@+id/transactionsRV"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/card_transaction"/>
+                android:layout_marginTop="16dp"
+                tools:listitem="@layout/card_transaction" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/FAB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
-                android:layout_margin="15dp"
-                android:backgroundTint="#ffffff"
+                android:layout_margin="16dp"
+                android:backgroundTint="#3592c4"
                 android:src="@drawable/ic_add"
                 app:fabSize="normal" />
 

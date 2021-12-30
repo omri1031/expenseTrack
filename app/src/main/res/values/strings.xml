@@ -4,6 +4,7 @@
     <string name="loginPrompt">Already registered? <b>Login now!</b></string>
     <string-array name="categories">
         <item>Select</item>
+        <item>Income</item>
         <item>Food</item>
         <item>Entertainment</item>
         <item>Drugs</item>

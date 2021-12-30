@@ -16,8 +16,6 @@ class ProfileActivity : AppCompatActivity() {
 
     //FireBase Authentication
     private lateinit var firebaseAuth: FirebaseAuth
-    private var email = ""
-    private var password = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
