@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_input.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\layout_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_transaction.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\card_transaction.xml"
+    }
+]
