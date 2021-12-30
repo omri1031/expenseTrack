@@ -1,10 +1,11 @@
 package com.example.expensetrack
 
 data class Transaction(
-    var item: String,
-    var date: String,
-    var note: String,
-    var amount: Double
+    var type: String? = null,
+    var date: String? = null,
+    var note: String? = null,
+    var category: String? = null,
+    var amount: Double? = null
 ) {
 
 }

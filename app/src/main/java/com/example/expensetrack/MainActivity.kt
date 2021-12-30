@@ -15,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
@@ -51,10 +50,9 @@ class MainActivity : AppCompatActivity() {
         //Config Toolbar
         toolbar = findViewById<Toolbar>(R.id.toolbarTB)
         toolbar.setTitle(("Today's Message"))
-//        binding.totalSpentTV.text =
 
         //Config RecyclerView
-        transactionsList = ArrayList()
+        transactionsList = arrayListOf<Transaction>()
         tAdapter = TransactionAdapter(transactionsList)
         transRV = findViewById<RecyclerView>(R.id.transactionsRV)
         transRV.layoutManager = LinearLayoutManager(this)
@@ -82,6 +80,12 @@ class MainActivity : AppCompatActivity() {
         if (firebaseUser != null) {
             //user is logged in
             email = firebaseUser.email!!
+            //Modify email for DB use
+            email = email.replace(".", "")
+            email = email.replace("#", "")
+            email = email.replace("$", "")
+            email = email.replace("[", "")
+            email = email.replace("]", "")
         } else {
             //not logged in
             startActivity(Intent(this, LoginActivity::class.java))
@@ -131,17 +135,13 @@ class MainActivity : AppCompatActivity() {
             }
             Log.d("Add Action", "addExpense: category: ${category} | type: ${type}")
 
-            email = email.replace(".", "")
-            email = email.replace("#", "")
-            email = email.replace("$", "")
-            email = email.replace("[", "")
-            email = email.replace("]", "")
             dbref = FirebaseDatabase.getInstance().reference.child("$email")
 
 
             val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
-            val action = Transaction(type, sdf.format(Date()), note, amount.toDouble())
-            dbref.setValue(action).addOnSuccessListener {
+            val action =
+                Transaction(type, sdf.format(Date()), note, category, amount.toDouble())
+            dbref.push().setValue(action).addOnSuccessListener {
                 Log.d("database", "addExpense: GOOD")
                 ad.cancel()
             }
@@ -160,16 +160,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getTransactionsData() {
-        dbref = FirebaseDatabase.getInstance().getReference("actions")
+        var sum: Double = 0.0
+        dbref = FirebaseDatabase.getInstance().getReference("$email")
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+                transactionsList.clear()
+                sum = 0.0
                 if (snapshot.exists()) {
                     for (transSnapshot in snapshot.children) {
+                        Log.d("getTransactionsData", "onDataChange: $transSnapshot")
                         val trans = transSnapshot.getValue(Transaction::class.java)
-                        transactionsList.add(trans!!)
+                        transactionsList.add(0, trans!!)
+                        //update Total amount
+                        if (trans.type == "in")
+                            sum += trans.amount!!
+                        else
+                            sum -= trans.amount!!
                     }
-                    transRV.adapter = tAdapter
+
+                    transRV.adapter = TransactionAdapter(transactionsList)
+                    findViewById<TextView>(R.id.totalSpentTV).setText("Total Spendings: $" + sum.toString())
                 }
+
             }
 
             override fun onCancelled(error: DatabaseError) {
