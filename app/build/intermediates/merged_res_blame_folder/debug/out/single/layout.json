@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\layout_input.xml"
     },
     {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar.xml",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },

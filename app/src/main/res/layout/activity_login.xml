@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Login" />
+        android:text="Login"
+        tools:ignore="HardcodedText" />
 
     <TextView
         style="@style/TextAppearance.MaterialComponents.Caption"
@@ -21,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/titleLabelTV"
         android:layout_centerHorizontal="true"
-        android:text="Login to your account" />
+        android:text="Login to your account"
+        tools:ignore="HardcodedText" />
 
     <!--    Email-->
     <com.google.android.material.textfield.TextInputLayout
@@ -37,8 +39,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:autofillHints="emailAddress"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--    Password-->
     <com.google.android.material.textfield.TextInputLayout
@@ -52,8 +56,10 @@
             android:id="@+id/passwordET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="passwords"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
     <!--Login Button-->
@@ -63,7 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTIL"
         android:layout_marginTop="20dp"
-        android:text="Login" />
+        android:text="Login"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
 
     <!--    Signup prompt-->
     <TextView

@@ -18,6 +18,8 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
+    var totalSum: Double = 0.0
+
     //Toolbar
     private lateinit var toolbar: Toolbar
 
@@ -48,8 +50,8 @@ class MainActivity : AppCompatActivity() {
         checkUser()
 
         //Config Toolbar
-        toolbar = findViewById<Toolbar>(R.id.toolbarTB)
-        toolbar.setTitle(("Today's Message"))
+//        toolbar = findViewById<Toolbar>(R.id.toolbarTB)
+//        toolbar.setTitle(("Today's Message"))
 
         //Config RecyclerView
         transactionsList = arrayListOf<Transaction>()
@@ -60,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         transRV.adapter = tAdapter
         //get data from firebase
         getTransactionsData()
+
 
         //config progress dialog
         progressDialog = ProgressDialog(this)
@@ -160,12 +163,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getTransactionsData() {
-        var sum: Double = 0.0
         dbref = FirebaseDatabase.getInstance().getReference("$email")
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 transactionsList.clear()
-                sum = 0.0
+                totalSum = 0.0
                 if (snapshot.exists()) {
                     for (transSnapshot in snapshot.children) {
                         Log.d("getTransactionsData", "onDataChange: $transSnapshot")
@@ -173,22 +175,28 @@ class MainActivity : AppCompatActivity() {
                         transactionsList.add(0, trans!!)
                         //update Total amount
                         if (trans.type == "in")
-                            sum += trans.amount!!
+                            totalSum += trans.amount!!
                         else
-                            sum -= trans.amount!!
+                            totalSum -= trans.amount!!
                     }
 
                     transRV.adapter = TransactionAdapter(transactionsList)
-                    findViewById<TextView>(R.id.totalSpentTV).setText("Total Spendings: $" + sum.toString())
-                }
+                    findViewById<TextView>(R.id.totalSpentTV)
+                        .setText("Total Spendings: $" + totalSum.toString())
 
+                    //Create Foreground Service with Total Amount
+                    Log.d("Services", "getTransactionsData: Got Data now to service")
+                    val myIntent = Intent(this@MainActivity, MyForegroundService::class.java)
+                    myIntent.putExtra("totalSum", totalSum)
+                    startService(myIntent)
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(this@MainActivity, error.message, Toast.LENGTH_SHORT).show()
             }
-
         })
+
     }
 }
 

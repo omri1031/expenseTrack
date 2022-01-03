@@ -80,12 +80,16 @@
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_bug_report_24.xml.flat",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\drawable\\ic_baseline_bug_report_24.xml"
+    },
+    {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_bug_report_24.xml.flat",
-        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\drawable\\ic_baseline_bug_report_24.xml"
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_google_icon.png.flat",
@@ -94,6 +98,10 @@
     {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_google_icon_round.png.flat",
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\mipmap-mdpi\\google_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\xml_settings.xml.flat",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\xml\\settings.xml"
     },
     {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -138,6 +146,10 @@
     {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_24.xml.flat",
+        "source": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\src\\main\\res\\drawable\\ic_baseline_menu_24.xml"
     },
     {
         "merged": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",

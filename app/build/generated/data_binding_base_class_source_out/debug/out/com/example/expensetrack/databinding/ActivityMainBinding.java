@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,20 +25,15 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FloatingActionButton FAB;
 
   @NonNull
-  public final Toolbar toolbarTB;
-
-  @NonNull
   public final TextView totalSpentTV;
 
   @NonNull
   public final RecyclerView transactionsRV;
 
   private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull FloatingActionButton FAB,
-      @NonNull Toolbar toolbarTB, @NonNull TextView totalSpentTV,
-      @NonNull RecyclerView transactionsRV) {
+      @NonNull TextView totalSpentTV, @NonNull RecyclerView transactionsRV) {
     this.rootView = rootView;
     this.FAB = FAB;
-    this.toolbarTB = toolbarTB;
     this.totalSpentTV = totalSpentTV;
     this.transactionsRV = transactionsRV;
   }
@@ -77,12 +71,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbarTB;
-      Toolbar toolbarTB = ViewBindings.findChildViewById(rootView, id);
-      if (toolbarTB == null) {
-        break missingId;
-      }
-
       id = R.id.totalSpentTV;
       TextView totalSpentTV = ViewBindings.findChildViewById(rootView, id);
       if (totalSpentTV == null) {
@@ -95,8 +83,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, FAB, toolbarTB, totalSpentTV,
-          transactionsRV);
+      return new ActivityMainBinding((LinearLayout) rootView, FAB, totalSpentTV, transactionsRV);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

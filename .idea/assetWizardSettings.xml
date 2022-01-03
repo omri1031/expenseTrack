@@ -311,7 +311,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../../../../Omri%20Cohen/AppData/Local/Android/Sdk/icons/material/materialicons/remove/baseline_remove_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/menu/baseline_menu_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -322,9 +322,8 @@
                         <option name="values">
                           <map>
                             <entry key="autoMirrored" value="true" />
-                            <entry key="color" value="7e0505" />
-                            <entry key="opacityPercent" value="80" />
-                            <entry key="outputName" value="ic_baseline_remove_24" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="ic_baseline_menu_24" />
                             <entry key="sourceFile" value="C:\Users\Omri Cohen\OneDrive - ort braude college of engineering\Braude\Sem7\AndroidDev\expenseTrack" />
                           </map>
                         </option>

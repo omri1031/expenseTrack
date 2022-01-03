@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Omri Cohen\\OneDrive - ort braude college of engineering\\Braude\\Sem7\\AndroidDev\\expenseTrack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Omri Cohen\\.gradle\\caches\\transforms-3\\0e60c42be82399573967eb23fa071a14\\transformed\\appcompat-1.2.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Omri Cohen\\.gradle\\caches\\transforms-3\\d388cafa3a03caa0437c1f3b81fe87c8\\transformed\\appcompat-1.4.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omri Cohen\\.gradle\\caches\\transforms-3\\828de43cbd2593da2303ee5f518ee079\\transformed\\jetified-play-services-auth-19.0.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Omri Cohen\\.gradle\\caches\\transforms-3\\da8452ddffa95fd2ffc279fd79835207\\transformed\\jetified-play-services-auth-20.0.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

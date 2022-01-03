@@ -54,6 +54,7 @@ class SignUpActivity : AppCompatActivity() {
         //open login activity
         binding.loginPromptTV.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }
     }
 
